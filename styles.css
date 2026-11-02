@@ -123,7 +123,12 @@ a:hover { text-decoration: underline; }
 .play-badge img { height: 66px; width: auto; }
 .play-badge:hover { opacity: 0.88; }
 .cta-row { align-items: center; }
-.cta-end .play-badge { margin-top: -18px; }
+/* Apple's badge has no padding of its own, so it takes the height Google's
+   visible badge has. */
+.app-store-badge { display: inline-flex; }
+.app-store-badge img { height: 46px; width: auto; }
+.app-store-badge:hover { opacity: 0.88; }
+.cta-end .cta-row { justify-content: center; margin-top: -9px; }
 
 .btn {
   display: inline-flex; align-items: center; gap: 8px;
