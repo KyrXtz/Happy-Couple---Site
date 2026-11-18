@@ -31,11 +31,12 @@
     <div class="wrap">
       <a class="back-home" href="index.html">← Back to home</a>
       <h1>Privacy Policy</h1>
-      <p class="updated">Last updated: 4 November 2026</p>
+      <p class="updated">Last updated: 18 November 2026</p>
 
       <div class="callout">
         <strong>The short version:</strong> Happy Couple is built so that we can't see your budget.
-        Your financial data is created and kept in a spreadsheet inside <em>your own</em> Google Drive.
+        Your financial data is kept on your phone, or, once you connect Google Sheets to share it, in a
+        spreadsheet inside your own Google Drive.
         We don't operate a server that stores it, we don't sell it, and we don't show ads.
       </div>
 
@@ -70,29 +71,37 @@
       <h2 id="collect">2. Information we handle</h2>
 
       <h3>Google account information</h3>
-      <p>When you sign in with Google, we receive basic profile information from your Google account —
-      your name, email address, and profile identifier. This is used to sign you in, label who entered
-      what in a shared budget, and connect your partner to the right budget.</p>
+      <p>You do not need an account to use the app on one phone. Google sign-in happens only when you,
+      as the budget's owner, choose to connect Google Sheets (to share the budget with a partner, or to
+      keep a copy in your Google Drive), when you join a partner's budget, or when you restore a budget
+      from your Google Drive. When you sign in with Google, we receive basic profile information from
+      your Google account — your name, email address, and profile identifier. This is used to sign you
+      in, label who entered what in a shared budget, and connect your partner to the right budget.</p>
 
       <h3>Your budget data</h3>
       <p>The financial information you enter — incomes, expenses, savings amounts, category names and
       icons, split settings and the month each change applies from, settlements and the notes you add
       to expenses and settlements, the months each person joined or left the budget, and similar
-      details — is written into a Google Sheet that the app creates in your Google Drive.
-      This is <strong>your</strong> data in <strong>your</strong> Drive. It is not transmitted to or
-      stored on any server operated by us.</p>
+      details — is stored in one of two places. Until you connect Google Sheets, it is stored only on
+      your phone, in the app's own storage, and is not sent anywhere (the backup your phone makes of its
+      apps, such as Android backup or an iCloud or computer backup of an iPhone, may include the app's
+      data, as it does for any app). Once you connect, it is written into a Google Sheet that the app
+      creates in your Google Drive. This is <strong>your</strong> data in <strong>your</strong> Drive.
+      In both cases it is not transmitted to or stored on any server operated by us.</p>
 
       <h3>Partner information</h3>
       <p>If you invite a partner (or join a partner's budget), the app records each partner's name and
-      email inside the shared budget sheet so the app knows who is who. A partner can leave the budget
+      email inside the shared budget sheet so the app knows who is who. A partner can only join a budget
+      that has been connected to Google Sheets. A partner can leave the budget
       at any time from within the app, and the budget's owner can remove a partner (see
       <a href="#partner">section 5</a>).</p>
 
       <h3>Purchase information</h3>
       <p>If you buy Premium, the purchase is processed by Google Play Billing (Android) or the Apple App
-      Store (iPhone) and managed through our payments provider, RevenueCat. RevenueCat receives a purchase receipt/identifier and your Google
-      account's profile identifier, which the app uses as your customer ID so that Premium follows your
-      Google account across budgets. The app also records whether you have Premium in your shared budget
+      Store (iPhone) and managed through our payments provider, RevenueCat. RevenueCat receives a purchase receipt/identifier and an
+      identifier the app creates on your phone or, once you connect Google, your Google account's
+      profile identifier, which the app uses as your customer ID so that Premium follows you across
+      budgets. The app also records whether you have Premium in your shared budget
       sheet, next to your email, so that your partner's app can unlock Premium for them too. We do
       <strong>not</strong> receive or store your card or bank details — Google Play or Apple handles payment.</p>
 
@@ -163,17 +172,20 @@
       deliver the app and process subscriptions.</p>
 
       <h2 id="storage">3. Where your data lives</h2>
-      <p>Your budget is stored in Google Sheets and Google Drive under your own Google account. The app
+      <p>Until you connect Google Sheets, your budget is stored only on your phone. Once you connect, it
+      is stored in Google Sheets and Google Drive under your own Google account. The app
       uses Google's restricted <code>drive.file</code> access, which means it can only see and manage the
       specific budget file it created for you — it cannot access any other file in your Google Drive.</p>
       <p>Because there is no Happy Couple server holding your budget, your data's availability, backup,
-      and security also depend on Google. Please review
+      and security depend on your phone and, once you connect, on Google. Please review
       <a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Google's Privacy Policy</a>.</p>
 
       <h2 id="use">4. How we use information</h2>
       <ul>
-        <li>To sign you in and keep you connected to your budget.</li>
-        <li>To create, read, and update your budget spreadsheet on your instruction.</li>
+        <li>To sign you in with Google when you connect Google Sheets, join a partner's budget or restore
+        one, and keep you connected to it.</li>
+        <li>To keep your budget on your phone, and, once you connect Google Sheets, to create, read, and
+        update your budget spreadsheet on your instruction.</li>
         <li>To attribute entries to the correct partner in a shared budget.</li>
         <li>To provide and restore your Premium subscription entitlement.</li>
         <li>To operate core features such as QR pairing.</li>
@@ -184,8 +196,9 @@
       <p>We do not use your information for advertising, and we do not sell it.</p>
 
       <h2 id="partner">5. Sharing with your partner</h2>
-      <p>A shared budget is, by nature, shared. When you invite a partner, your budget spreadsheet is
-      shared with their Google account through Google Drive, and they can read and edit the budget.
+      <p>A shared budget is, by nature, shared. To invite a partner, you first connect Google Sheets,
+      which copies your budget into a Google Sheet. That spreadsheet is then shared with your partner's
+      Google account through Google Drive, and they can read and edit the budget.
       When you accept an invitation to a partner's budget, they share theirs with you in the same way.
       Only the people you invite are given access.</p>
       <p>When you leave a budget, or its owner removes you, the app no longer opens it for you, and
@@ -198,7 +211,7 @@
       <h2 id="third">6. Third-party services</h2>
       <p>Happy Couple relies on a small number of trusted services to function:</p>
       <ul>
-        <li><strong>Google</strong> (Sign-In, Drive, and Sheets) — to authenticate you and to store and sync your budget in your own account. See <a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Google's Privacy Policy</a>.</li>
+        <li><strong>Google</strong> (Sign-In, Drive, and Sheets) — when you connect Google Sheets, join a partner's budget or restore one, to authenticate you and to store and sync your budget in your own account. See <a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Google's Privacy Policy</a>.</li>
         <li><strong>Google Play Billing</strong> — to process subscription payments on Android. See <a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Google's Privacy Policy</a>.</li>
         <li><strong>Apple App Store</strong> — to process subscription payments on iPhone. See <a href="https://www.apple.com/legal/privacy/" rel="noopener" target="_blank">Apple's Privacy Policy</a>.</li>
         <li><strong>RevenueCat</strong> — to manage and validate subscriptions. See <a href="https://www.revenuecat.com/privacy" rel="noopener" target="_blank">RevenueCat's Privacy Policy</a>.</li>
@@ -206,19 +219,22 @@
       </ul>
 
       <h2 id="retention">7. Retention &amp; deletion</h2>
-      <p>Your budget data is retained for as long as the spreadsheet exists in your Google Drive —
-      because you own it, you decide how long to keep it. To delete your budget data, delete the budget
+      <p>A budget kept only on your phone is deleted with "Start over" on the You tab, or by uninstalling
+      the app, and cannot be recovered afterwards unless you connected Google Sheets first. A connected
+      budget is retained for as long as the spreadsheet exists in your Google Drive —
+      because you own it, you decide how long to keep it. To delete it, delete the budget
       spreadsheet from your Google Drive. To stop the app from accessing your Google account, remove its
       access from your Google Account settings (see below). Subscription records held by Google Play, Apple
       and RevenueCat are retained according to their own policies and applicable law.</p>
 
       <h2 id="rights">8. Your rights &amp; choices</h2>
       <p>Depending on where you live, you may have rights to access, correct, export, or delete your
-      personal data. Because your budget lives in your Google Drive, you can already access, edit, and
+      personal data. A budget kept on your phone can be exported from the You tab, and once you connect
+      Google Sheets your budget lives in your Google Drive, where you can already access, edit, and
       export it directly at any time.</p>
       <ul>
         <li><strong>Remove app access to Google:</strong> visit <a href="https://myaccount.google.com/permissions" rel="noopener" target="_blank">your Google Account's third-party access page</a> and remove Happy Couple.</li>
-        <li><strong>Delete your data:</strong> delete the budget spreadsheet from your Google Drive.</li>
+        <li><strong>Delete your data:</strong> use "Start over" on the You tab for a budget kept on your phone, and delete the budget spreadsheet from your Google Drive for a connected budget.</li>
         <li><strong>Manage your subscription:</strong> on Android, use the Subscriptions section of the Google Play Store; on iPhone, open Settings, tap your name, then Subscriptions.</li>
         <li><strong>Turn off diagnostics:</strong> crash/error reporting is on by default so we can catch problems early, but you can turn it off from <strong>You → Account → Privacy &amp; Data</strong> in the app.</li>
         <li><strong>Other requests:</strong> contact us using the details below.</li>
@@ -230,8 +246,9 @@
 
       <h2 id="security">10. Security</h2>
       <p>Sign-in and data access use Google's authentication and are protected in transit by encryption.
-      Because your budget is stored in your own Google account, its security is also governed by the
-      protections on your Google account — we recommend enabling two-step verification. No method of
+      A budget kept on your phone is protected by the phone's own security, such as its lock screen and
+      encryption. Once you connect Google Sheets, your budget is stored in your own Google account, so
+      its security is also governed by the protections on your Google account — we recommend enabling two-step verification. No method of
       transmission or storage is completely secure, and we cannot guarantee absolute security.</p>
 
       <h2 id="changes">11. Changes to this policy</h2>
