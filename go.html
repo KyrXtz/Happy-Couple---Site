@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Get Happy Couple</title>
+  <meta name="description" content="Download Happy Couple - Budget, Save &amp; Split Together for Android or iPhone." />
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="favicon.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .go { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 32px 0; }
+    .go-card {
+      background: var(--card); border: 1px solid var(--line); border-radius: 24px;
+      box-shadow: var(--shadow); padding: 40px 28px; text-align: center; max-width: 420px; width: 100%;
+    }
+    .go-card img.go-icon { width: 88px; height: 88px; border-radius: 22px; margin: 0 auto 20px; box-shadow: 0 6px 18px -8px rgba(55,49,43,.5); }
+    .go-card h1 { font-size: 24px; line-height: 1.25; margin: 0 0 8px; }
+    .go-card p { color: var(--muted); margin: 0 0 24px; font-size: 15px; }
+    .go-card .cta-row { flex-direction: column; justify-content: center; }
+    .go-card .play-badge { margin: -9px 0; }
+    .go-card .home-link { display: inline-block; margin-top: 22px; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <main class="go">
+    <div class="wrap">
+      <div class="go-card">
+        <img class="go-icon" src="icon.png" alt="The Happy Couple app icon" />
+        <h1>Happy Couple</h1>
+        <p id="go-msg">Budget, save &amp; split together. Free on Android and iPhone.</p>
+        <div class="cta-row">
+          <a class="play-badge" id="go-android" href="https://play.google.com/store/apps/details?id=com.kyrxtz.happycouple&amp;referrer=utm_source%3Dinstagram%26utm_medium%3Dsocial">
+            <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" />
+          </a>
+          <a class="app-store-badge" id="go-ios" href="https://apps.apple.com/app/id6827670155">
+            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" />
+          </a>
+        </div>
+        <a class="home-link" href="index.html">What is Happy Couple?</a>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    // Send phones straight to their store. Any other device stays on this page
+    // and sees both badges. The badges are also the fallback if the redirect is blocked.
+    (function () {
+      var ua = navigator.userAgent || "";
+      var isAndroid = /Android/i.test(ua);
+      var isIOS = /iPhone|iPad|iPod/i.test(ua) ||
+        (/Macintosh/i.test(ua) && navigator.maxTouchPoints > 1); // iPadOS reports as a Mac
+      var target = isAndroid ? document.getElementById("go-android")
+                 : isIOS ? document.getElementById("go-ios")
+                 : null;
+      if (!target) return;
+      document.getElementById("go-msg").textContent = "Taking you to the store…";
+      window.location.replace(target.href);
+    })();
+  </script>
+</body>
+</html>
